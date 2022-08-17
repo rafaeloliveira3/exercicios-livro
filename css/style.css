@@ -19,6 +19,26 @@ header{
     gap: 10px;
     width: 100%;
     height: 5vh;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.link-button{
+    cursor: pointer;
+    width: 5vw;
+    padding: 3px 5px;
+    border-radius: 25px;
+    transition: all .3s;
+}
+button:hover{
+    transform: translateY(-2px);
+}
+.select-exercise{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 }
 
 .input{
@@ -38,4 +58,5 @@ header{
     width: 8vw;
     padding: 3px 5px;
     border-radius: 25px;
+    transition: all .3s;
 }
