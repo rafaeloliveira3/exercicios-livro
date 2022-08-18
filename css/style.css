@@ -27,7 +27,7 @@ a{
 }
 .link-button{
     cursor: pointer;
-    width: 5vw;
+    width: 100px;
     padding: 3px 5px;
     border-radius: 25px;
     transition: all .3s;
@@ -35,9 +35,10 @@ a{
 button:hover{
     transform: translateY(-2px);
 }
-.select-exercise{
+main{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     gap: 25px;
 }
 
@@ -53,10 +54,20 @@ button:hover{
     flex-direction: column;
     gap: 15px;
 }
-#calcular{
+.template{
     cursor: pointer;
-    width: 8vw;
+    width: 130px;
     padding: 3px 5px;
     border-radius: 25px;
     transition: all .3s;
+}
+
+section, .hide{
+    display: none;
+}
+section.show{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
