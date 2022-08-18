@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+    <script src="./js/calculator.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,24 +14,136 @@
         <h1>Exercícios Livro</h1>
     </header>
     <main class="select-exercise">
-            <a href="./pages/exercicioA.html">
-                <button class="link-button">Exercicío A</button>
-            </a>
-            <a href="./pages/exercicioB.html">
-                <button class="link-button">Exercicío B</button>
-            </a>
-            <a href="./pages/exercicioC.html">
-                <button class="link-button">Exercicío C</button>
-            </a>
-            <a href="./pages/exercicioF.html">
-                <button class="link-button">Exercicío F</button>
-            </a>
-            <a href="./pages/exercicioJ.html">
-                <button class="link-button">Exercicío J</button>
-            </a>
-            <a href="./pages/exercicioN.html">
-                <button class="link-button">Exercicío N</button>
-            </a>
-    </main>
+            <nav>
+                <button class="link-button" id="exA-exiber">Exercicío A</button>
+                <button class="link-button" id="exB-exiber">Exercicío B</button>
+                <button class="link-button" id="exC-exiber">Exercicío C</button>
+                <button class="link-button" id="exF-exiber">Exercicío F</button>
+                <button class="link-button" id="exJ-exiber">Exercicío J</button>
+                <button class="link-button" id="exN-exiber">Exercicío N</button>
+            </nav>
+            <!-- Elementos para o Exercício A -->
+            <section id="exA" class="section">
+                <div class="container">
+                    <h1>Exercício A</h1>
+                    <div class="title">Calculadora de Subtrações</div>
+                    <form id="form-A">
+                        <div class="input">
+                            <label>Insira um número qualquer: </label>
+                            <input type="number" id="exA-number1" required step="any"/>
+                        </div>
+                        <div class="input">
+                            <label>Insira outro número qualquer</label>
+                            <input type="number" id="exA-number2" required step="any" />
+                        </div>
+                    </form>
+                    <button class="button template" id="calcular-A">Calcular</button>
+                    <div class="result" id="exA-result"></div>
+                </div>
+            </section>
+            <!-- Elementos para o Exercício B -->
+            <section id="exB" class="section">
+                <div class="container">
+                    <h1>Exercício B</h1>
+                    <div class="title">Números Positivos</div>
+                    <form id="form-B">
+                        <div class="input">
+                            <label>Insira um número qualquer: </label>
+                            <input type="number" id="exB-number" required step="1"/>
+                        </div>
+                    </form>
+                    <button class="button template" id="calcular-B">Calcular</button>
+                    <div class="result" id="exB-result"></div>
+                </div>
+            </section>
+            <!-- Elementos para o Exercício C -->
+            <section class="section" id="exC">
+                <div class="container">
+                    <h1>Exercício C</h1>
+                    <div class="title">Calculador de Médias</div>
+                    <form id="form-C">
+                        <div class="input">
+                            <label>Insira a primeira nota do aluno: </label>
+                            <input type="number" id="exC-number1" required step="any"/>
+                        </div>
+                        <div class="input">
+                            <label>Insira a segunda nota do aluno: </label>
+                            <input type="number" id="exC-number2" required step="any"/>
+                        </div>
+                        <div class="input"any>
+                            <label>Insira a terceira nota do aluno: </label>
+                            <input type="number" id="exC-number3" required step="any"/>
+                        </div>
+                        <div class="input">
+                            <label>Insira a quarta nota do aluno: </label>
+                            <input type="number" id="exC-number4" required step="any"/>
+                        </div>
+                    </form>
+                    <button class="button template" id="calcular-C">Calcular</button>
+                    <div class="result" id="exC-result"></div>
+                </div>
+            </section>
+            <!-- Elementos para o Exercício F -->
+            <section class="section" id="exF">
+                <div class="container">
+                    <h1>Exercício F</h1>
+                    <div class="title">Ordenar números em ordem crescente</div>
+                    <form id="form-F">
+                        <div class="input">
+                            <label>Primeiro Número: </label>
+                            <input type="number" id="exF-number1" required step="any"/>
+                        </div>
+                        <div class="input">
+                            <label>Segundo Número: </label>
+                            <input type="number" id="exF-number2" required step="any"/>
+                        </div>
+                        <div class="input">
+                            <label>Terceiro Número: </label>
+                            <input type="number" id="exF-number3" required step="any"/>
+                        </div>
+                    </form>
+                    <button class="button template" id="calcular-F">Ordenar</button>
+                    <div class="result" id="exF-result"></div>
+                </div>
+            </section>
+            <!-- Elementos para o Exercício J -->
+            <section class="section" id="exJ">
+                <div class="container">
+                    <h1>Exercício J</h1>
+                    <div class="title">Par ou Impar?</div>
+                    <form id="form-J">
+                        <div class="input">
+                            <label>Informe um Número: </label>
+                            <input type="number" id="exJ-number" required step="any"/>
+                        </div>
+                    </form>
+                    <button class="button template" id="calcular-J">Calcular</button>
+                    <div class="result" id="exJ-result"></div>
+                </div>
+            </section>
+            <!-- Elementos para o Exercício N -->
+            <section class="section" id="exN">
+                <div class="container">
+                    <h1>Exercício N</h1>
+                    <div class="title">Somando Números (o resultado só é informado se for maior ou igual a 100)</div>
+                    <form id="form-N">
+                        <div class="input">
+                            <label>Primeiro Número: </label>
+                            <input type="number" id="exN-number1" required step="any"/>
+                        </div>
+                        <div class="input">
+                            <label>Segundo Número: </label>
+                            <input type="number" id="exN-number2" required step="any"/>
+                        </div>
+                        <div class="input">
+                            <label>Terceiro Número: </label>
+                            <input type="number" id="exN-number3" required step="any"/>
+                        </div>
+                    </form>
+                    <button class="button template" id="calcular-N">Ordenar</button>
+                    <div class="result" id="exN-result"></div>
+                </div>
+            </section>
+        </main>
 </body>
 </html>
